@@ -1,0 +1,23 @@
+.filter_wrap{
+	width: 1200px;
+}
+#main_middle_content{
+	width: 1200px;
+}
+#endpoint:hover {
+	width: 101%;
+	font-size: 110%;
+}
+.title {
+
+	width: 101%;
+	font-size: 110%;
+}
+.ytd-guide-entry-renderer:hover{
+	font-size: 20px;
+}
+.ytd-video-primary-info-renderer:hover{font-size: 20px;
+
+}
+
+
