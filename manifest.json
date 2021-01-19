@@ -1,0 +1,42 @@
+{
+	
+    "manifest_version": 2,
+
+  "name": "Codehemanta",
+  "description": "This extension will maker hemanta gayen",
+  "version": "0.1",
+ 
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "Codehemanta",
+		"default_popup": "popup.html"
+	},
+
+  "permissions": [
+   "http://*.gaana.com/*",
+   "https://*.youtube.com/*",
+   "https://*.hotstar.com/in/*",
+   "https://*.xhamster7.desi/*",
+   "https://*.facebookgoo.blogspot.com/*",
+   "https://*.facebook.com/*"
+   
+
+   ],
+ 
+	"content_scripts": [
+		{
+			"matches": [
+				"https://*.gaana.com/*",
+				"https://*.youtube.com/*",
+			    "https://*.xhamster7.desi/*",
+			    "https://*.hotstar.com/in/*",
+			    "https://*.facebookgoo.blogspot.com/*",
+			    "https://*.facebook.com/*"],	
+		    "css" : ["black.css"],
+	    	"js": ["download.js"],
+
+
+  "run_at": "document_end"
+          }
+  ]
+}
